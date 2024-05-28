@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/main_create_account"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        style="@style/text_30"
+        android:text="Create an account"
+
+        />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/login" />
+
+    <TextView
+        android:id="@+id/main_login"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_image"
+        android:text="Login"
+        style="@style/text_30"
+        />
+
+    <EditText
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/main_email"
+        android:hint="Enter Email id "
+        android:layout_below="@id/main_login"
+        style="@style/edit_20"
+       />
+
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/main_pass"
+        android:hint="Enter Password "
+        android:layout_below="@id/main_email"
+       style="@style/edit_20"/>
+
+    <Button
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/main_pass"
+        android:id="@+id/main_button"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</RelativeLayout>
